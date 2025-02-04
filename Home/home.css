@@ -10,12 +10,16 @@ a {
 	color: inherit;
 }
 
+label {
+	cursor: pointer;
+}
+
 .f-row {
 	display: flex;
 	align-items: center;
 }
 
-.f-col{
+.f-col {
 	display: flex;
 	flex-direction: column;
 }
@@ -33,8 +37,8 @@ body {
 }
 
 .navMenu {
+	border-right: 1px solid #e4e4e4;
 	position: fixed;
-	border-right: 1PX solid #e4e4e4;
 	left: 0;
 	top: 0;
 	bottom: 0;
@@ -140,14 +144,155 @@ body {
 	}
 }
 
-.content {
-	width: 100%;
+.pageContent {
 	min-height: 100vh;
 	background: #f2f2f2;
 	font-family: "Space Grotesk", serif;
 	font-optical-sizing: auto;
-	font-weight: <weight>;
-	font-style: normal;
+	padding-left: 18rem;
+
+	&& .container {
+		font-family: "Poppins";
+		padding-block: 2rem;
+		font-size: 0.8rem;
+		padding-right: 28rem;
+		gap: 2rem;
+		width: 100%;
+
+		&& .top {
+			justify-content: space-between;
+
+			&& .page {
+				&& .sUser {
+					font-weight: 600;
+					font-size: 1.3rem;
+					line-height: 1.8rem;
+					color: #282828;
+				}
+
+				&& .page-desc {
+					color: #6b6b6b;
+				}
+			}
+
+			&& .date {
+				font-weight: 600;
+				background: #fff;
+				padding: 0.25rem 0.5rem;
+				border-radius: 0.5rem;
+				font-size: 0.65rem;
+				border: 1px solid #8e8e8e;
+			}
+		}
+
+		&& .analytics {
+			padding: 1.5rem 6rem;
+			width: 100%;
+			justify-content: space-between;
+			align-items: center;
+			background: #ffffff;
+			border-radius: 0.75rem;
+
+			&& .an-sec {
+				gap: 1rem;
+				flex: 1;
+				margin: auto;
+
+				.icon {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					width: 3rem;
+					height: 3rem;
+					font-size: 1.25rem;
+					background: #f1f1f1;
+					border-radius: 50%;
+				}
+
+				.data {
+					text-transform: capitalize;
+					font-weight: 600;
+
+					&& .title {
+						color: #818080;
+					}
+
+					&& .amount {
+						font-size: 1.2rem;
+					}
+				}
+			}
+		}
+		&& .engagements {
+			row-gap: 1rem;
+			width: 100%;
+			&& .engagement {
+				background: #ffffff;
+				padding: 1rem 1.5rem 1.5rem;
+				gap: 1rem;
+				border-radius: 0.75rem;
+
+				&& .title {
+					font-weight: 600;
+					color: #1e1e1e;
+					font-size: 1rem;
+				}
+
+				&& .filters {
+					justify-content: space-between;
+
+					&& .tabs {
+						gap: 0.5rem;
+						align-items: center;
+
+						&& .tab {
+							&& input[type="radio"] {
+								display: none;
+							}
+
+							&& label {
+								padding: 0.25rem 0.5rem;
+								font-weight: 500;
+								font-size: 0.75rem;
+								background: #e7e7e7;
+								border-radius: 0.5rem;
+							}
+
+							&& input[type="radio"]:checked + label {
+								background: #1e1e1e;
+								color: white;
+							}
+						}
+
+					}
+					&& .drops {
+						padding: 0.25rem 0.5rem;
+
+						&& select {
+							border: 1px solid #D5D5D5;
+							color: #898989;
+							background: #e7e7e7;
+							border-radius: 0.35rem;
+							padding: 0.25rem 0.35rem;
+							font-size: 0.75rem;
+							font-weight: 550;
+
+							&& option{
+							color: #676767;
+							background: #fff;
+							}
+						}
+					}
+				}
+				&& .graph{
+					width: 100%;
+					height: 12rem;
+					background: #D9D9D9;
+					border-radius: 1rem;
+				}
+			}
+		}
+	}
 
 	&& .side-container {
 		position: fixed;
@@ -157,7 +302,7 @@ body {
 		top: 0;
 		bottom: 0;
 		padding: 1.5rem 2rem;
-		border-left: 1PX solid #e4e4e4;
+		border-left: 1px solid #e4e4e4;
 
 		&& .title {
 			width: 100%;
@@ -167,30 +312,30 @@ body {
 				margin-left: 0.75rem;
 				flex: 1;
 				height: 1px;
-				background: #A7A7A7;
+				background: #a7a7a7;
 			}
 
-			&& .line-c{
+			&& .line-c {
 				flex: 1;
 				height: 1px;
-				background: #A7A7A7;
+				background: #a7a7a7;
 
-				&&~span:not(.line-c){
+				&& ~ span:not(.line-c) {
 					margin-inline: 0.75rem;
 				}
 			}
 		}
 
-		&& .cur-sUsers{
-			&& .placeholder{
-				background: #EBEBEB;
+		&& .cur-sUsers {
+			&& .placeholder {
+				background: #ebebeb;
 				border-radius: 0.75rem;
 				width: 100%;
 				margin-block: 1rem 3rem;
 				height: 15rem;
 			}
 		}
-		&& .activities{
+		&& .activities {
 			&& .content {
 				font-family: "Poppins";
 				font-size: 0.8rem;
@@ -198,75 +343,79 @@ body {
 				padding-block: 1rem;
 				align-items: center;
 
-				&& ul{
+				&& ul {
 					gap: 0.5rem;
 					max-width: 22rem;
 					position: relative;
-				
-					&& .wGradient{
+
+					&& .wGradient {
 						position: absolute;
 						bottom: 0;
 						left: 0;
 						right: 0;
 						height: 3rem;
-						background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
+						background: linear-gradient(
+							180deg,
+							rgba(255, 255, 255, 0) 0%,
+							#ffffff 100%
+						);
 					}
 
-					&& li{
+					&& li {
 						list-style: none;
 						border-radius: 0.8rem;
 						padding: 0.75rem 1rem;
 					}
-	
-	
+
 					&& .green {
-						background: #EBFFEE;
-						color: #288F37;
-	
-						&& .high{
+						background: #ebffee;
+						color: #288f37;
+
+						&& .high {
 							text-transform: capitalize;
 							color: #377841;
 							font-weight: 600;
 						}
 					}
-					
+
 					&& .red {
-						background: #FFEBEB;
-						color: #8F2828;
-	
-						&& .high{
+						background: #ffebeb;
+						color: #8f2828;
+
+						&& .high {
 							text-transform: capitalize;
 							color: #783737;
 							font-weight: 600;
 						}
 					}
-					
+
 					&& .blue {
-						background: #EBF3FF;
+						background: #ebf3ff;
 						color: #375578;
-	
-						&& .high{
+
+						&& .high {
 							text-transform: capitalize;
-							color: #28628F;
+							color: #28628f;
 							font-weight: 600;
 						}
 					}
 				}
 
-				.view-btn{
+				.view-btn {
 					padding: 0.25rem 0.55rem;
-					border: 1px solid #B8B8B8;
+					border: 1px solid #b8b8b8;
 					border-radius: 0.7rem;
 					font-size: 0.75rem;
-					transition: background 0.25s ease, color 0.25s ease, scale 0.25s ease;
+					transition: background 0.25s ease, color 0.25s ease,
+						scale 0.25s ease;
 
-					&&:hover{
+					&&:hover {
 						background: #1e1e1e;
 						color: white;
 						border: 1px solid #1e1e1e;
 					}
 
-					&&:active{
+					&&:active {
 						scale: 0.95;
 					}
 				}
