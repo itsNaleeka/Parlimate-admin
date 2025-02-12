@@ -171,7 +171,7 @@ body {
 .popup {
 	z-index: 1000;
 	position: fixed;
-	padding: 1rem 1.5rem 10rem;
+	padding: 1rem 1.5rem 9rem;
 	background: #fff;
 	border-radius: 1rem;
 	max-width: 25rem;
