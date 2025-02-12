@@ -46,10 +46,52 @@
 			href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-light.css"
 		/>
 	</head>
-	<body 
-	>
+	<body class="popup-active">
 		<div class="popup-overlay"></div>
-		<div class="filter-popup popup">sda</div>
+		<div class="delete-user-popup f-col popup">
+			<div class="close-btn">
+				<i class="fa-solid fa-xmark"></i>
+			</div>
+			<div class="head f-col">
+				<div class="title">
+					Are you sure you want to <span class="red">delete</span> user <span class="username capitalize">manuja ransara</span>?
+				</div>
+				<img src="../Frame 297.png" alt="delete user" width="200px">
+			</div>
+			<div class="warns">
+				<ul class="f-col">
+					<li class="warn f-row">
+						<div class="icon">
+							<i class="fa-solid fa-fire"></i>
+						</div>
+						<div class="details f-col">
+							<div class="title">This action cannot be undone</div>
+							<div class="desc">Deleting this user is permanent and can not be reversed. Proceed with caution.</div>
+						</div>
+					</li>
+					<li class="warn f-row">
+						<div class="icon">
+							<i class="fa-solid fa-globe"></i>
+						</div>
+						<div class="details f-col">
+							<div class="title">System-Wide Impact</div>
+							<div class="desc">This action will affect multiple systems and can not be reversed. Proceed with caution.ere</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="actions f-col">
+				<div class="desc f-col">
+					By selecting “Continue” you agree to the
+					<a href="#">Parlimate User privacy policy</a>
+				</div>
+				<div class="btns f-row">
+					<div class="cancel"></div>
+					<button class="proceed">continue</button>
+				</div>
+			</div>
+		</div>
+		</div>
 		<div class="navMenu f-col center">
 			<div class="logo">
 				<img src="../assets/logo.png" alt="Parlimate" id="logo" />
@@ -153,7 +195,7 @@
 								/>
 							</div>
 							<div class="filter">
-								<button class="filter-btn f-row">
+								<button class="filter-btn f-row" id="filter-btn">
 									<i class="fa-solid fa-filter"></i>
 									Filter
 								</button>
@@ -186,7 +228,9 @@
 										<div class="p-img"></div>
 										<div class="credentials f-col">
 											<div class="name">John Doe</div>
-											<div class="email">jDoe@parlimate.com</div>
+											<div class="email">
+												jDoe@parlimate.com
+											</div>
 										</div>
 									</td>
 									<td class="role">
@@ -201,6 +245,24 @@
 										<button>
 											<i class="fa-regular fa-ellipsis-vertical"></i>
 										</button>
+										<ul class="menu">
+											<li class="f-row">
+												<i class="fa-regular fa-user"></i>
+												view profile
+											</li>
+											<li class="f-row">
+												<i class="fa-regular fa-pencil"></i>
+												edit details
+											</li>
+											<li class="f-row">
+												<i class="fa-regular fa-lock"></i>
+												change permission
+											</li>
+											<li class="f-row">
+												<i class="fa-regular fa-trash"></i>
+												delete user
+											</li>
+										</ul>
 									</td>
 								</tr>
 								<tr>
@@ -209,7 +271,9 @@
 										<div class="p-img"></div>
 										<div class="credentials f-col">
 											<div class="name">Jane Smith</div>
-											<div class="email">jSmith@parlimate.com</div>
+											<div class="email">
+												jSmith@parlimate.com
+											</div>
 										</div>
 									</td>
 									<td class="role">
@@ -224,6 +288,24 @@
 										<button>
 											<i class="fa-regular fa-ellipsis-vertical"></i>
 										</button>
+										<ul class="menu">
+											<li class="f-row">
+												<i class="fa-regular fa-user"></i>
+												view profile
+											</li>
+											<li class="f-row">
+												<i class="fa-regular fa-pencil"></i>
+												edit details
+											</li>
+											<li class="f-row">
+												<i class="fa-regular fa-lock"></i>
+												change permission
+											</li>
+											<li class="f-row">
+												<i class="fa-regular fa-trash"></i>
+												delete user
+											</li>
+										</ul>
 									</td>
 								</tr>
 								<tr>
@@ -232,7 +314,9 @@
 										<div class="p-img"></div>
 										<div class="credentials f-col">
 											<div class="name">Michael Brown</div>
-											<div class="email">mBrown@parlimate.com</div>
+											<div class="email">
+												mBrown@parlimate.com
+											</div>
 										</div>
 									</td>
 									<td class="role">
@@ -247,6 +331,24 @@
 										<button>
 											<i class="fa-regular fa-ellipsis-vertical"></i>
 										</button>
+										<ul class="menu">
+											<li class="f-row">
+												<i class="fa-regular fa-user"></i>
+												view profile
+											</li>
+											<li class="f-row">
+												<i class="fa-regular fa-pencil"></i>
+												edit details
+											</li>
+											<li class="f-row">
+												<i class="fa-regular fa-lock"></i>
+												change permission
+											</li>
+											<li class="f-row">
+												<i class="fa-regular fa-trash"></i>
+												delete user
+											</li>
+										</ul>
 									</td>
 								</tr>
 								<tr>
@@ -255,7 +357,9 @@
 										<div class="p-img"></div>
 										<div class="credentials f-col">
 											<div class="name">Emily Davis</div>
-											<div class="email">eDavis@parlimate.com</div>
+											<div class="email">
+												eDavis@parlimate.com
+											</div>
 										</div>
 									</td>
 									<td class="role">
@@ -270,6 +374,24 @@
 										<button>
 											<i class="fa-regular fa-ellipsis-vertical"></i>
 										</button>
+										<ul class="menu">
+											<li class="f-row">
+												<i class="fa-regular fa-user"></i>
+												view profile
+											</li>
+											<li class="f-row">
+												<i class="fa-regular fa-pencil"></i>
+												edit details
+											</li>
+											<li class="f-row">
+												<i class="fa-regular fa-lock"></i>
+												change permission
+											</li>
+											<li class="f-row">
+												<i class="fa-regular fa-trash"></i>
+												delete user
+											</li>
+										</ul>
 									</td>
 								</tr>
 								<tr>
@@ -278,7 +400,9 @@
 										<div class="p-img"></div>
 										<div class="credentials f-col">
 											<div class="name">Chris Johnson</div>
-											<div class="email">cJohnson@parlimate.com</div>
+											<div class="email">
+												cJohnson@parlimate.com
+											</div>
 										</div>
 									</td>
 									<td class="role">
@@ -293,6 +417,24 @@
 										<button>
 											<i class="fa-regular fa-ellipsis-vertical"></i>
 										</button>
+										<ul class="menu">
+											<li class="f-row">
+												<i class="fa-regular fa-user"></i>
+												view profile
+											</li>
+											<li class="f-row">
+												<i class="fa-regular fa-pencil"></i>
+												edit details
+											</li>
+											<li class="f-row">
+												<i class="fa-regular fa-lock"></i>
+												change permission
+											</li>
+											<li class="f-row">
+												<i class="fa-regular fa-trash"></i>
+												delete user
+											</li>
+										</ul>
 									</td>
 								</tr>
 								<tr>
@@ -301,7 +443,9 @@
 										<div class="p-img"></div>
 										<div class="credentials f-col">
 											<div class="name">Patricia Williams</div>
-											<div class="email">pWilliams@parlimate.com</div>
+											<div class="email">
+												pWilliams@parlimate.com
+											</div>
 										</div>
 									</td>
 									<td class="role">
@@ -316,6 +460,24 @@
 										<button>
 											<i class="fa-regular fa-ellipsis-vertical"></i>
 										</button>
+										<ul class="menu">
+											<li class="f-row">
+												<i class="fa-regular fa-user"></i>
+												view profile
+											</li>
+											<li class="f-row">
+												<i class="fa-regular fa-pencil"></i>
+												edit details
+											</li>
+											<li class="f-row">
+												<i class="fa-regular fa-lock"></i>
+												change permission
+											</li>
+											<li class="f-row">
+												<i class="fa-regular fa-trash"></i>
+												delete user
+											</li>
+										</ul>
 									</td>
 								</tr>
 								<tr>
@@ -324,7 +486,9 @@
 										<div class="p-img"></div>
 										<div class="credentials f-col">
 											<div class="name">Robert Jones</div>
-											<div class="email">rJones@parlimate.com</div>
+											<div class="email">
+												rJones@parlimate.com
+											</div>
 										</div>
 									</td>
 									<td class="role">
@@ -339,6 +503,24 @@
 										<button>
 											<i class="fa-regular fa-ellipsis-vertical"></i>
 										</button>
+										<ul class="menu">
+											<li class="f-row">
+												<i class="fa-regular fa-user"></i>
+												view profile
+											</li>
+											<li class="f-row">
+												<i class="fa-regular fa-pencil"></i>
+												edit details
+											</li>
+											<li class="f-row">
+												<i class="fa-regular fa-lock"></i>
+												change permission
+											</li>
+											<li class="f-row">
+												<i class="fa-regular fa-trash"></i>
+												delete user
+											</li>
+										</ul>
 									</td>
 								</tr>
 								<tr>
@@ -347,7 +529,9 @@
 										<div class="p-img"></div>
 										<div class="credentials f-col">
 											<div class="name">Linda Martinez</div>
-											<div class="email">lMartinez@parlimate.com</div>
+											<div class="email">
+												lMartinez@parlimate.com
+											</div>
 										</div>
 									</td>
 									<td class="role">
@@ -362,6 +546,24 @@
 										<button>
 											<i class="fa-regular fa-ellipsis-vertical"></i>
 										</button>
+										<ul class="menu">
+											<li class="f-row">
+												<i class="fa-regular fa-user"></i>
+												view profile
+											</li>
+											<li class="f-row">
+												<i class="fa-regular fa-pencil"></i>
+												edit details
+											</li>
+											<li class="f-row">
+												<i class="fa-regular fa-lock"></i>
+												change permission
+											</li>
+											<li class="f-row">
+												<i class="fa-regular fa-trash"></i>
+												delete user
+											</li>
+										</ul>
 									</td>
 								</tr>
 								<tr>
@@ -370,7 +572,9 @@
 										<div class="p-img"></div>
 										<div class="credentials f-col">
 											<div class="name">David Lee</div>
-											<div class="email">dLee@parlimate.com</div>
+											<div class="email">
+												dLee@parlimate.com
+											</div>
 										</div>
 									</td>
 									<td class="role">
@@ -385,6 +589,24 @@
 										<button>
 											<i class="fa-regular fa-ellipsis-vertical"></i>
 										</button>
+										<ul class="menu">
+											<li class="f-row">
+												<i class="fa-regular fa-user"></i>
+												view profile
+											</li>
+											<li class="f-row">
+												<i class="fa-regular fa-pencil"></i>
+												edit details
+											</li>
+											<li class="f-row">
+												<i class="fa-regular fa-lock"></i>
+												change permission
+											</li>
+											<li class="f-row">
+												<i class="fa-regular fa-trash"></i>
+												delete user
+											</li>
+										</ul>
 									</td>
 								</tr>
 								<tr>
@@ -393,7 +615,9 @@
 										<div class="p-img"></div>
 										<div class="credentials f-col">
 											<div class="name">James White</div>
-											<div class="email">jWhite@parlimate.com</div>
+											<div class="email">
+												jWhite@parlimate.com
+											</div>
 										</div>
 									</td>
 									<td class="role">
@@ -408,6 +632,24 @@
 										<button>
 											<i class="fa-regular fa-ellipsis-vertical"></i>
 										</button>
+										<ul class="menu">
+											<li class="f-row">
+												<i class="fa-regular fa-user"></i>
+												view profile
+											</li>
+											<li class="f-row">
+												<i class="fa-regular fa-pencil"></i>
+												edit details
+											</li>
+											<li class="f-row">
+												<i class="fa-regular fa-lock"></i>
+												change permission
+											</li>
+											<li class="f-row">
+												<i class="fa-regular fa-trash"></i>
+												delete user
+											</li>
+										</ul>
 									</td>
 								</tr>
 							</tbody>
@@ -421,5 +663,29 @@
 				</div>
 			</div>
 		</div>
+<script>
+			document.querySelectorAll('.actbtn button').forEach(button => {
+				button.addEventListener('click', () => {
+					document.querySelectorAll('.actbtn .menu').forEach(menu => {
+						if (menu !== button.nextElementSibling) {
+							menu.classList.remove('nav-active');
+						}
+					});
+					button.nextElementSibling.classList.toggle('nav-active');
+				});
+			});
+			
+			document.querySelector('.close-btn').addEventListener('click', () => {
+				document.body.classList.toggle('popup-active');
+			});
+			document.querySelector('.proceed').addEventListener('click', () => {
+				document.body.classList.toggle('popup-active');
+			});
+
+			// Add event listener to the filter button
+			document.getElementById("filter-btn").addEventListener("click", function() {
+				document.body.classList.toggle("popup-active");
+			});
+		</script>
 	</body>
 </html>
