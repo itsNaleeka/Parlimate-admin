@@ -10,10 +10,13 @@ a {
 	color: inherit;
 }
 
-label {
+button,label {
 	cursor: pointer;
+	transition: scale 0.25s ease;
 }
-
+button:active{
+	scale: 0.95;
+}
 .f-row {
 	display: flex;
 	align-items: center;
