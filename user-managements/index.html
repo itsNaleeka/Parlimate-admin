@@ -46,7 +46,10 @@
 			href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-light.css"
 		/>
 	</head>
-	<body>
+	<body 
+	>
+		<div class="popup-overlay"></div>
+		<div class="filter-popup popup">sda</div>
 		<div class="navMenu f-col center">
 			<div class="logo">
 				<img src="../assets/logo.png" alt="Parlimate" id="logo" />
@@ -161,7 +164,7 @@
 							</button>
 						</div>
 					</div>
-					<div class="data">
+					<div class="data f-col">
 						<table class="users">
 							<thead>
 								<tr>
@@ -171,7 +174,6 @@
 									<td>status</td>
 									<td>last active</td>
 									<td class="head-row f-row">joined on</td>
-									<td>joined on</td>
 									<td>contribution</td>
 									<td>reports</td>
 									<td>actions</td>
@@ -180,7 +182,13 @@
 							<tbody>
 								<tr>
 									<td>1</td>
-									<td>John Doe</td>
+									<td class="profile f-row">
+										<div class="p-img"></div>
+										<div class="credentials f-col">
+											<div class="name">John Doe</div>
+											<div class="email">jDoe@parlimate.com</div>
+										</div>
+									</td>
 									<td class="role">
 										<span class="admin">Admin</span>
 									</td>
@@ -189,7 +197,6 @@
 									<td>18 Jan, 2025</td>
 									<td>0</td>
 									<td>0</td>
-									<td>0</td>
 									<td class="actbtn">
 										<button>
 											<i class="fa-regular fa-ellipsis-vertical"></i>
@@ -198,7 +205,13 @@
 								</tr>
 								<tr>
 									<td>2</td>
-									<td>Jane Smith</td>
+									<td class="profile f-row">
+										<div class="p-img"></div>
+										<div class="credentials f-col">
+											<div class="name">Jane Smith</div>
+											<div class="email">jSmith@parlimate.com</div>
+										</div>
+									</td>
 									<td class="role">
 										<span class="citizen">Citizen</span>
 									</td>
@@ -207,7 +220,6 @@
 									<td>17 Jan, 2025</td>
 									<td>5</td>
 									<td>1</td>
-									<td>2</td>
 									<td class="actbtn">
 										<button>
 											<i class="fa-regular fa-ellipsis-vertical"></i>
@@ -216,7 +228,13 @@
 								</tr>
 								<tr>
 									<td>3</td>
-									<td>Michael Brown</td>
+									<td class="profile f-row">
+										<div class="p-img"></div>
+										<div class="credentials f-col">
+											<div class="name">Michael Brown</div>
+											<div class="email">mBrown@parlimate.com</div>
+										</div>
+									</td>
 									<td class="role">
 										<span class="moderator">Moderator</span>
 									</td>
@@ -225,7 +243,6 @@
 									<td>16 Jan, 2025</td>
 									<td>10</td>
 									<td>0</td>
-									<td>1</td>
 									<td class="actbtn">
 										<button>
 											<i class="fa-regular fa-ellipsis-vertical"></i>
@@ -234,7 +251,13 @@
 								</tr>
 								<tr>
 									<td>4</td>
-									<td>Emily Davis</td>
+									<td class="profile f-row">
+										<div class="p-img"></div>
+										<div class="credentials f-col">
+											<div class="name">Emily Davis</div>
+											<div class="email">eDavis@parlimate.com</div>
+										</div>
+									</td>
 									<td class="role">
 										<span class="citizen">Citizen</span>
 									</td>
@@ -243,7 +266,6 @@
 									<td>15 Jan, 2025</td>
 									<td>3</td>
 									<td>2</td>
-									<td>0</td>
 									<td class="actbtn">
 										<button>
 											<i class="fa-regular fa-ellipsis-vertical"></i>
@@ -252,7 +274,13 @@
 								</tr>
 								<tr>
 									<td>5</td>
-									<td>Chris Johnson</td>
+									<td class="profile f-row">
+										<div class="p-img"></div>
+										<div class="credentials f-col">
+											<div class="name">Chris Johnson</div>
+											<div class="email">cJohnson@parlimate.com</div>
+										</div>
+									</td>
 									<td class="role">
 										<span class="admin">Admin</span>
 									</td>
@@ -261,7 +289,6 @@
 									<td>14 Jan, 2025</td>
 									<td>8</td>
 									<td>3</td>
-									<td>4</td>
 									<td class="actbtn">
 										<button>
 											<i class="fa-regular fa-ellipsis-vertical"></i>
@@ -270,7 +297,13 @@
 								</tr>
 								<tr>
 									<td>6</td>
-									<td>Patricia Williams</td>
+									<td class="profile f-row">
+										<div class="p-img"></div>
+										<div class="credentials f-col">
+											<div class="name">Patricia Williams</div>
+											<div class="email">pWilliams@parlimate.com</div>
+										</div>
+									</td>
 									<td class="role">
 										<span class="citizen">Citizen</span>
 									</td>
@@ -279,7 +312,6 @@
 									<td>13 Jan, 2025</td>
 									<td>6</td>
 									<td>1</td>
-									<td>0</td>
 									<td class="actbtn">
 										<button>
 											<i class="fa-regular fa-ellipsis-vertical"></i>
@@ -288,7 +320,13 @@
 								</tr>
 								<tr>
 									<td>7</td>
-									<td>Robert Jones</td>
+									<td class="profile f-row">
+										<div class="p-img"></div>
+										<div class="credentials f-col">
+											<div class="name">Robert Jones</div>
+											<div class="email">rJones@parlimate.com</div>
+										</div>
+									</td>
 									<td class="role">
 										<span class="moderator">Moderator</span>
 									</td>
@@ -297,7 +335,6 @@
 									<td>12 Jan, 2025</td>
 									<td>7</td>
 									<td>0</td>
-									<td>3</td>
 									<td class="actbtn">
 										<button>
 											<i class="fa-regular fa-ellipsis-vertical"></i>
@@ -306,7 +343,13 @@
 								</tr>
 								<tr>
 									<td>8</td>
-									<td>Linda Martinez</td>
+									<td class="profile f-row">
+										<div class="p-img"></div>
+										<div class="credentials f-col">
+											<div class="name">Linda Martinez</div>
+											<div class="email">lMartinez@parlimate.com</div>
+										</div>
+									</td>
 									<td class="role">
 										<span class="citizen">Citizen</span>
 									</td>
@@ -315,7 +358,6 @@
 									<td>11 Jan, 2025</td>
 									<td>2</td>
 									<td>4</td>
-									<td>1</td>
 									<td class="actbtn">
 										<button>
 											<i class="fa-regular fa-ellipsis-vertical"></i>
@@ -324,7 +366,13 @@
 								</tr>
 								<tr>
 									<td>9</td>
-									<td>David Lee</td>
+									<td class="profile f-row">
+										<div class="p-img"></div>
+										<div class="credentials f-col">
+											<div class="name">David Lee</div>
+											<div class="email">dLee@parlimate.com</div>
+										</div>
+									</td>
 									<td class="role">
 										<span class="politician">Politician</span>
 									</td>
@@ -333,7 +381,6 @@
 									<td>10 Jan, 2025</td>
 									<td>9</td>
 									<td>2</td>
-									<td>0</td>
 									<td class="actbtn">
 										<button>
 											<i class="fa-regular fa-ellipsis-vertical"></i>
@@ -342,25 +389,13 @@
 								</tr>
 								<tr>
 									<td>10</td>
-									<td>Barbara Wilson</td>
-									<td class="role">
-										<span class="citizen">Citizen</span>
+									<td class="profile f-row">
+										<div class="p-img"></div>
+										<div class="credentials f-col">
+											<div class="name">James White</div>
+											<div class="email">jWhite@parlimate.com</div>
+										</div>
 									</td>
-									<td>Inactive</td>
-									<td>9 Jan, 2025</td>
-									<td>9 Jan, 2025</td>
-									<td>4</td>
-									<td>3</td>
-									<td>2</td>
-									<td class="actbtn">
-										<button>
-											<i class="fa-regular fa-ellipsis-vertical"></i>
-										</button>
-									</td>
-								</tr>
-								<tr>
-									<td>11</td>
-									<td>James White</td>
 									<td class="role">
 										<span class="political-party">Political Party</span>
 									</td>
@@ -369,7 +404,6 @@
 									<td>8 Jan, 2025</td>
 									<td>1</td>
 									<td>0</td>
-									<td>5</td>
 									<td class="actbtn">
 										<button>
 											<i class="fa-regular fa-ellipsis-vertical"></i>
@@ -378,6 +412,11 @@
 								</tr>
 							</tbody>
 						</table>
+						<div class="pagination capitalize f-row">
+							<span>prev</span>
+							<span class="curr-page">1</span>
+							<span>next</span>
+						</div>
 					</div>
 				</div>
 			</div>
