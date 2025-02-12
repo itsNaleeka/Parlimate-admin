@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>User Management | Admin Dashboard</title>
+
+		<link rel="stylesheet" href="./index.css" />
+		<link rel="stylesheet" href="../index.css" />
+
+		<!-- icons -->
+		<link
+			rel="stylesheet"
+			data-purpose="Layout StyleSheet"
+			title="Web Awesome"
+			href="/css/app-wa-09b459cf485d4b1f3304947240314c05.css?vsn=d"
+		/>
+
+		<link
+			rel="stylesheet"
+			href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css"
+		/>
+
+		<link
+			rel="stylesheet"
+			href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-duotone-solid.css"
+		/>
+
+		<link
+			rel="stylesheet"
+			href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-thin.css"
+		/>
+
+		<link
+			rel="stylesheet"
+			href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-solid.css"
+		/>
+
+		<link
+			rel="stylesheet"
+			href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-regular.css"
+		/>
+
+		<link
+			rel="stylesheet"
+			href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-light.css"
+		/>
+	</head>
+	<body 
+	>
+		<div class="popup-overlay"></div>
+		<div class="filter-popup popup">sda</div>
+		<div class="navMenu f-col center">
+			<div class="logo">
+				<img src="../assets/logo.png" alt="Parlimate" id="logo" />
+			</div>
+			<div class="navigation">
+				<ul>
+					<li>
+						<a href="../Home/index.html" class="nav-item f-row">
+							<i class="fa-regular fa-house"></i>
+							<span>home</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="nav-item f-row active">
+							<i class="fa-regular fa-users"></i>
+							<span>user management</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="nav-item f-row">
+							<i class="fa-regular fa-briefcase"></i>
+							<span>fundraise management</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="nav-item f-row">
+							<i class="fa-regular fa-check-to-slot"></i>
+							<span>survey management</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="nav-item f-row">
+							<i class="fa-regular fa-cards-blank"></i>
+							<span>post management</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="nav-item f-row">
+							<i class="fa-regular fa-circle-check"></i>
+							<span>requests</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="nav-item f-row">
+							<i class="fa-regular fa-sliders-up"></i>
+							<span>platform settings</span>
+						</a>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<a href="#" class="f-row profile">
+							<div class="p-img"></div>
+							<div class="sUser f-col">
+								<div class="name">Naleeka Kumarasinghe</div>
+								<div class="role">Admin</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="f-row log-out">
+							<i class="fa-solid fa-right-from-bracket"></i>
+							log out
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="pageContent">
+			<div class="container f-col">
+				<div class="top f-row">
+					<div class="page f-col">
+						<div class="page-title capitalize">User management</div>
+						<div class="page-desc">
+							Manage user roles, permissions, and activity logs.
+						</div>
+					</div>
+					<div class="date">18 Jan, 2025</div>
+				</div>
+				<div class="content f-col">
+					<div class="topS f-row">
+						<div class="show f-row">
+							Shows
+							<select name="rows" id="rows">
+								<option value="10">10</option>
+								<option value="20">20</option>
+								<option value="50">50</option>
+							</select>
+							entries
+						</div>
+						<div class="actions f-row">
+							<div class="search-bar">
+								<label for="user-search">
+									<i class="fa-solid fa-magnifying-glass"></i>
+								</label>
+								<input
+									type="search"
+									placeholder="Search by name/userId"
+									name="user-search"
+									id="user-search"
+								/>
+							</div>
+							<div class="filter">
+								<button class="filter-btn f-row">
+									<i class="fa-solid fa-filter"></i>
+									Filter
+								</button>
+							</div>
+							<button class="add-btn f-row">
+								<i class="fa-sharp fa-solid fa-plus"></i>
+								Add user
+							</button>
+						</div>
+					</div>
+					<div class="data f-col">
+						<table class="users">
+							<thead>
+								<tr>
+									<td>User ID</td>
+									<td>User Name</td>
+									<td>Role</td>
+									<td>status</td>
+									<td>last active</td>
+									<td class="head-row f-row">joined on</td>
+									<td>contribution</td>
+									<td>reports</td>
+									<td>actions</td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td class="profile f-row">
+										<div class="p-img"></div>
+										<div class="credentials f-col">
+											<div class="name">John Doe</div>
+											<div class="email">jDoe@parlimate.com</div>
+										</div>
+									</td>
+									<td class="role">
+										<span class="admin">Admin</span>
+									</td>
+									<td>Active</td>
+									<td>18 Jan, 2025</td>
+									<td>18 Jan, 2025</td>
+									<td>0</td>
+									<td>0</td>
+									<td class="actbtn">
+										<button>
+											<i class="fa-regular fa-ellipsis-vertical"></i>
+										</button>
+									</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td class="profile f-row">
+										<div class="p-img"></div>
+										<div class="credentials f-col">
+											<div class="name">Jane Smith</div>
+											<div class="email">jSmith@parlimate.com</div>
+										</div>
+									</td>
+									<td class="role">
+										<span class="citizen">Citizen</span>
+									</td>
+									<td>Inactive</td>
+									<td>17 Jan, 2025</td>
+									<td>17 Jan, 2025</td>
+									<td>5</td>
+									<td>1</td>
+									<td class="actbtn">
+										<button>
+											<i class="fa-regular fa-ellipsis-vertical"></i>
+										</button>
+									</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td class="profile f-row">
+										<div class="p-img"></div>
+										<div class="credentials f-col">
+											<div class="name">Michael Brown</div>
+											<div class="email">mBrown@parlimate.com</div>
+										</div>
+									</td>
+									<td class="role">
+										<span class="moderator">Moderator</span>
+									</td>
+									<td>Active</td>
+									<td>16 Jan, 2025</td>
+									<td>16 Jan, 2025</td>
+									<td>10</td>
+									<td>0</td>
+									<td class="actbtn">
+										<button>
+											<i class="fa-regular fa-ellipsis-vertical"></i>
+										</button>
+									</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td class="profile f-row">
+										<div class="p-img"></div>
+										<div class="credentials f-col">
+											<div class="name">Emily Davis</div>
+											<div class="email">eDavis@parlimate.com</div>
+										</div>
+									</td>
+									<td class="role">
+										<span class="citizen">Citizen</span>
+									</td>
+									<td>Active</td>
+									<td>15 Jan, 2025</td>
+									<td>15 Jan, 2025</td>
+									<td>3</td>
+									<td>2</td>
+									<td class="actbtn">
+										<button>
+											<i class="fa-regular fa-ellipsis-vertical"></i>
+										</button>
+									</td>
+								</tr>
+								<tr>
+									<td>5</td>
+									<td class="profile f-row">
+										<div class="p-img"></div>
+										<div class="credentials f-col">
+											<div class="name">Chris Johnson</div>
+											<div class="email">cJohnson@parlimate.com</div>
+										</div>
+									</td>
+									<td class="role">
+										<span class="admin">Admin</span>
+									</td>
+									<td>Inactive</td>
+									<td>14 Jan, 2025</td>
+									<td>14 Jan, 2025</td>
+									<td>8</td>
+									<td>3</td>
+									<td class="actbtn">
+										<button>
+											<i class="fa-regular fa-ellipsis-vertical"></i>
+										</button>
+									</td>
+								</tr>
+								<tr>
+									<td>6</td>
+									<td class="profile f-row">
+										<div class="p-img"></div>
+										<div class="credentials f-col">
+											<div class="name">Patricia Williams</div>
+											<div class="email">pWilliams@parlimate.com</div>
+										</div>
+									</td>
+									<td class="role">
+										<span class="citizen">Citizen</span>
+									</td>
+									<td>Active</td>
+									<td>13 Jan, 2025</td>
+									<td>13 Jan, 2025</td>
+									<td>6</td>
+									<td>1</td>
+									<td class="actbtn">
+										<button>
+											<i class="fa-regular fa-ellipsis-vertical"></i>
+										</button>
+									</td>
+								</tr>
+								<tr>
+									<td>7</td>
+									<td class="profile f-row">
+										<div class="p-img"></div>
+										<div class="credentials f-col">
+											<div class="name">Robert Jones</div>
+											<div class="email">rJones@parlimate.com</div>
+										</div>
+									</td>
+									<td class="role">
+										<span class="moderator">Moderator</span>
+									</td>
+									<td>Inactive</td>
+									<td>12 Jan, 2025</td>
+									<td>12 Jan, 2025</td>
+									<td>7</td>
+									<td>0</td>
+									<td class="actbtn">
+										<button>
+											<i class="fa-regular fa-ellipsis-vertical"></i>
+										</button>
+									</td>
+								</tr>
+								<tr>
+									<td>8</td>
+									<td class="profile f-row">
+										<div class="p-img"></div>
+										<div class="credentials f-col">
+											<div class="name">Linda Martinez</div>
+											<div class="email">lMartinez@parlimate.com</div>
+										</div>
+									</td>
+									<td class="role">
+										<span class="citizen">Citizen</span>
+									</td>
+									<td>Active</td>
+									<td>11 Jan, 2025</td>
+									<td>11 Jan, 2025</td>
+									<td>2</td>
+									<td>4</td>
+									<td class="actbtn">
+										<button>
+											<i class="fa-regular fa-ellipsis-vertical"></i>
+										</button>
+									</td>
+								</tr>
+								<tr>
+									<td>9</td>
+									<td class="profile f-row">
+										<div class="p-img"></div>
+										<div class="credentials f-col">
+											<div class="name">David Lee</div>
+											<div class="email">dLee@parlimate.com</div>
+										</div>
+									</td>
+									<td class="role">
+										<span class="politician">Politician</span>
+									</td>
+									<td>Active</td>
+									<td>10 Jan, 2025</td>
+									<td>10 Jan, 2025</td>
+									<td>9</td>
+									<td>2</td>
+									<td class="actbtn">
+										<button>
+											<i class="fa-regular fa-ellipsis-vertical"></i>
+										</button>
+									</td>
+								</tr>
+								<tr>
+									<td>10</td>
+									<td class="profile f-row">
+										<div class="p-img"></div>
+										<div class="credentials f-col">
+											<div class="name">James White</div>
+											<div class="email">jWhite@parlimate.com</div>
+										</div>
+									</td>
+									<td class="role">
+										<span class="political-party">Political Party</span>
+									</td>
+									<td>Active</td>
+									<td>8 Jan, 2025</td>
+									<td>8 Jan, 2025</td>
+									<td>1</td>
+									<td>0</td>
+									<td class="actbtn">
+										<button>
+											<i class="fa-regular fa-ellipsis-vertical"></i>
+										</button>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="pagination capitalize f-row">
+							<span>prev</span>
+							<span class="curr-page">1</span>
+							<span>next</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
