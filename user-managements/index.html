@@ -48,7 +48,7 @@
 	</head>
 	<body class="popup-active">
 		<div class="popup-overlay"></div>
-		<div class="delete-user-popup f-col popup">
+		<div class="delete-user-popup f-col popup popup-show">
 			<div class="close-btn">
 				<i class="fa-solid fa-xmark"></i>
 			</div>
@@ -258,7 +258,7 @@
 												<i class="fa-regular fa-lock"></i>
 												change permission
 											</li>
-											<li class="f-row">
+											<li class="f-row del-user">
 												<i class="fa-regular fa-trash"></i>
 												delete user
 											</li>
@@ -301,7 +301,7 @@
 												<i class="fa-regular fa-lock"></i>
 												change permission
 											</li>
-											<li class="f-row">
+											<li class="f-row del-user">
 												<i class="fa-regular fa-trash"></i>
 												delete user
 											</li>
@@ -344,7 +344,7 @@
 												<i class="fa-regular fa-lock"></i>
 												change permission
 											</li>
-											<li class="f-row">
+											<li class="f-row del-user">
 												<i class="fa-regular fa-trash"></i>
 												delete user
 											</li>
@@ -387,7 +387,7 @@
 												<i class="fa-regular fa-lock"></i>
 												change permission
 											</li>
-											<li class="f-row">
+											<li class="f-row del-user">
 												<i class="fa-regular fa-trash"></i>
 												delete user
 											</li>
@@ -430,7 +430,7 @@
 												<i class="fa-regular fa-lock"></i>
 												change permission
 											</li>
-											<li class="f-row">
+											<li class="f-row del-user">
 												<i class="fa-regular fa-trash"></i>
 												delete user
 											</li>
@@ -473,7 +473,7 @@
 												<i class="fa-regular fa-lock"></i>
 												change permission
 											</li>
-											<li class="f-row">
+											<li class="f-row del-user">
 												<i class="fa-regular fa-trash"></i>
 												delete user
 											</li>
@@ -516,7 +516,7 @@
 												<i class="fa-regular fa-lock"></i>
 												change permission
 											</li>
-											<li class="f-row">
+											<li class="f-row del-user">
 												<i class="fa-regular fa-trash"></i>
 												delete user
 											</li>
@@ -559,7 +559,7 @@
 												<i class="fa-regular fa-lock"></i>
 												change permission
 											</li>
-											<li class="f-row">
+											<li class="f-row del-user">
 												<i class="fa-regular fa-trash"></i>
 												delete user
 											</li>
@@ -598,11 +598,11 @@
 												<i class="fa-regular fa-pencil"></i>
 												edit details
 											</li>
-											<li class="f-row">
+											<li class="f-row ">
 												<i class="fa-regular fa-lock"></i>
 												change permission
 											</li>
-											<li class="f-row">
+											<li class="f-row del-user">
 												<i class="fa-regular fa-trash"></i>
 												delete user
 											</li>
@@ -645,7 +645,7 @@
 												<i class="fa-regular fa-lock"></i>
 												change permission
 											</li>
-											<li class="f-row">
+											<li class="f-row del-user">
 												<i class="fa-regular fa-trash"></i>
 												delete user
 											</li>
@@ -682,10 +682,14 @@
 				document.body.classList.toggle('popup-active');
 			});
 
-			// Add event listener to the filter button
-			document.getElementById("filter-btn").addEventListener("click", function() {
-				document.body.classList.toggle("popup-active");
-			});
+			// Add event listener to the delete account button
+			document.querySelectorAll(".del-user").forEach((btn) => {
+				btn.addEventListener("click", () => {
+					document.body.classList.add("popup-active");
+				})
+
+				
+			})
 		</script>
 	</body>
 </html>
