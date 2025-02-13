@@ -229,6 +229,11 @@
 								background: #dcdcdc;
 							}
 						}
+						&& td.actbtn button:has( ~ .menu.nav-active){
+							background: #e8e8e8;
+							border: 1px solid #dfdfdf;
+						}
+
 
 						&& td.actbtn {
 							position: relative;
