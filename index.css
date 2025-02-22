@@ -14,6 +14,7 @@ button,
 label {
 	cursor: pointer;
 	transition: scale 0.25s ease;
+	user-select: none;
 }
 button,
 a {
@@ -171,7 +172,7 @@ body {
 .popup {
 	z-index: 1000;
 	position: fixed;
-	padding: 1rem 1.5rem 9rem;
+	padding: 1.5rem 1.5rem;
 	background: #fff;
 	border-radius: 1rem;
 	max-width: 25rem;
@@ -208,7 +209,6 @@ body {
 	}
 	&& .head {
 		margin-top: 2rem;
-		align-items: center;
 		gap: 1rem;
 		font-weight: 600;
 		font-size: 1.2rem;
@@ -308,7 +308,7 @@ body.popup-active {
 		opacity: 1;
 		pointer-events: all;
 	}
-	&& .popup {
+	&& .popup-show {
 		transform: scale(1) translate(-50%, -50%);
 		opacity: 1;
 	}
